@@ -1,0 +1,13 @@
+#SalesTax.py
+#The program should prompt the user for the purchase price of an item 
+#and the sales tax rate. It should then display the total price of the item.
+
+price = input("What is the purchase price of the item? \n")
+sales_tax = input("What is the sales tax rate? (e.g. .157 for 15.7%) \n")
+
+floatPrice = float(price)
+floatsales_tax = float(sales_tax)
+
+total = floatPrice*(1+floatsales_tax) #Calulates the total price
+
+print("The total price of the item is: " + str(total))
